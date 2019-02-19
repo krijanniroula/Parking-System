@@ -1,0 +1,51 @@
+
+    <div class="container">
+      <form>
+        <div>
+          <div class="card-deck ">
+            <div class="card">
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="day">Day</label> <input type="text"
+                    class="form-control" id="day" value="{{today | date:'EEEE'}}" readonly>
+                </div>
+                <div class="form-group">
+                  <label for="date">Date</label> <input type="text"
+                    class="form-control" id="date" value="{{today | date}}" readonly>
+                </div>
+
+                <div class="form-group">
+                  <label for="timeIn">Time In</label> <input type="text"
+                    class="form-control" id="timeIn" value="{{today | date:'shortTime'}}" readonly>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="timeIn">Vehicle Type</label> <select
+                    id="inputState" class="form-control">
+                    <option selected>---- Choose ---</option>
+                    <option value="Four Wheel">Four Wheel</option>
+                    <option value="Two Wheel">Two Wheel</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="timeIn">Vehicle Number</label> <input type="number"
+                    class="form-control" id="timeIn" placeholder="Number">
+                </div>
+
+                <button type="submit" id="submitButton" name="submitButton"
+                  class="btn btn-primary float-right">Submit</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
