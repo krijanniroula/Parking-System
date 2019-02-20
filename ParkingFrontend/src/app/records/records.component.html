@@ -13,5 +13,30 @@
   </li>
 </ul> -->
 
+<table class="table table-bordered" *ngIf="records">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Date</th>
+      <th scope="col">Day</th>
+      <th scope="col">Time In</th>
+      <th scope="col">Time Out</th>
+      <th scope="col">Vehicle Number</th>
+      <th scope="col">Vehicle Type</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let record of records">
+    <tr>
+      <th>{{record.id}}</th>
+      <td>{{record.date}}</td>
+      <td>{{record.day}}</td>
+      <td>{{record.timeIn}}</td>
+      <td>{{record.timeOut}}</td>
+      <td>{{record.vehicle.vnumber}}</td>
+      <td>{{record.vehicle.vtype}}</td>
+    </tr>
+   
+  </tbody>
+</table>
 
 </div>
